@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+    <style>
+        body {
+
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            color: black;
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: yellow;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+
+            /* box-shadow: 13px 13px greenyellow; */
+            /* box-shadow: -13px -13px greenyellow; */
+            /* [it can be negative[for upwads]*/
+
+            /*here third value is blur radius*/
+            /* box-shadow: 7px 8px  15px greenyellow; high values are useful for blurring the box-shadow  */
+
+            /* box-shadow: 13px 13px 10px 34px greenyellow; */
+
+            /* box-shadow: 13px 13px 10px 34px rgba(0, 255, 34, 0.5); */
+            /*alpha[4th term] is responsible for darkness*/
+
+            /* box-shadow: inset 3px 5px green; */
+        }
+
+        p {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-style: italic;
+            /* text-shadow: 3px 2px red; */
+            /* text-shadow: 3px 2px 5px red; */
+            /* hiher the value of blur higher it is blur*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>I have started C++ course whichg does not men we will stop this course , we will continue this course
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam mollitia nemo eaque, cumque,
+                cupiditate voluptatem incidunt itaque laborum quo reprehenderit omnis tempore, porro officiis unde ipsa.
+                Sunt quo tempora sequi nam hic facere.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut obcaecati fugiat error quae, sit
+                maxime culpa a recusandae aliquid consectetur numquam illo nulla voluptas beatae temporibus totam
+                molestias distinctio? Blanditiis culpa molestiae doloribus.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut obcaecati fugiat error quae, sit
+                maxime culpa a recusandae aliquid consectetur numquam illo nulla voluptas beatae temporibus totam
+                molestias distinctio? Blanditiis culpa molestiae doloribus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

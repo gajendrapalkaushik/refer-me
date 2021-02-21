@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* initialize the conatainer as flex  */
+
+            /* flex properties for flex  */
+            /* flex-direction: row; */
+            /*default value of flex-direction is row*/
+            /* flex-direction: column;
+flex-direction: row-reverse;
+flex-direction: column-reverse; lower code overwrites the upper course */
+
+            /* flex-wrap: wrap; */
+            /*for responsive wrap */
+            /* default value is no wrap  */
+
+            /*flex-flow: row-reverse wrap;*/
+            /*flex-direction + flex-wrap*/
+
+            /* justify conntent will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /*box gain left right proper margins*/
+
+            /* align-conntent will justify the content in vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 5px solid yellow;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            /* flex properties for flex item  */
+            /*higher the order later it shows in the container*/
+            /* order: 2; */
+            /*placing of the box*/
+            /* flex-grow: 2; */
+            /*usd to extend the width of the box only */
+            /*negative numbers are invalid here instead flex shrink is used*/
+            /* flex-shrink: 2; */
+        }
+
+        #item-2 {
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            flex-basis: 420px;
+            /*when flex direction is set to row flex-basis: will control height*/
+            /*when flex direction is set to column flex-basis: will control width*/
+        }
+
+        #item-3 {
+flex: 2 2 222px;
+/*flex grow , flex shrink , flex-basis*/
+/* align-self: flex-start; */
+/* align-self: flex-end; */
+/* align-self: center; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is flexbox tutorial
+        <div class="container">
+            <!-- div.item#item.$*3 --
+            <!--normal display of div: block(it takes whole line , while inline takes place as much required) -->
+            <div class="item" id="item-1">First box</div>
+            <div class="item" id="item-2">Second box</div>
+            <div class="item" id="item-3">Third box</div>
+            <!-- <div class="item 4" id="item">Fourth box</div>
+            <div class="item 5" id="item">Fifth box</div>
+            <div class="item 6" id="item">Sixth box</div> -->
+        </div>
+    </h1>
+</body>
+
+</html>

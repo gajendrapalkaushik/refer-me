@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: chartreuse;
+        }
+
+        .container {
+            background-color: rgb(226, 205, 205);
+            border: 3px solid yellow;
+            /* WE can set margin/padding fro top ,bottom,left & right like this */
+            /* padding-top: 19px;
+    padding-bottom: 19px;  
+    padding-left: 19x;  
+    padding-right: 19px; */
+
+            /* margin-top: 4px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    margin-right: 7px; */
+
+            /* padding: 23px 56px 6px 78px; 
+       padding = top right bottom left */
+
+            /* padding: y(top/bottom) x(right/left) */
+            padding: 14px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deleniti adipisci repudiandae
+            sequi ad ducimus odit placeat amet explicabo illum reprehenderit, debitis rerum?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deleniti adipisci repudiandae
+            sequi ad ducimus odit placeat amet explicabo illum reprehenderit, debitis rerum?</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deleniti adipisci repudiandae
+            sequi ad ducimus odit placeat amet explicabo illum reprehenderit, debitis rerum?</p>
+
+    </div>
+</body>
+
+</html>
